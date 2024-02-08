@@ -1,90 +1,104 @@
+/* CSS styles for the body */
 body {
-  background-color: #002b36;
-  margin: 0;
+  background-color: #002b36; /* Setting background color */
+  margin: 0; /* Removing default margin */
 }
 
+/* Styles for the wrapper containing the code display */
 .wrapper {
-  display: flex;
-  padding: 1rem .5rem;
-  font-size: 1rem;
+  display: flex; /* Using flexbox for layout */
+  padding: 1rem .5rem; /* Adding padding */
+  font-size: 1rem; /* Setting font size */
 }
 
+/* Styles for <pre> element */
 pre {
-  margin: 0;
+  margin: 0; /* Removing default margin */
 }
 
+/* Styles for the code display */
 #code-display {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 0; /* Removing padding */
+  padding-bottom: 0; /* Removing padding */
 }
 
+/* Styles for line numbers */
 .line-numbers {
-  color: #7D7D7D;
-  font-family: monospace;
-  text-align: end;
+  color: #7D7D7D; /* Setting color */
+  font-family: monospace; /* Using monospace font */
+  text-align: end; /* Aligning text to the end */
 }
 
+/* Styles for textarea */
 textarea {
-  background-color: transparent;
-  resize: none;
-  width: 100%;
-  padding: 0;
-  margin-left: 1rem;
-  color: #7D7D7D;
-  min-height: calc(100vh - 2rem);
-  border: none;
-  outline: none;
+  background-color: transparent; /* Setting transparent background */
+  resize: none; /* Disabling resizing */
+  width: 100%; /* Taking full width */
+  padding: 0; /* Removing padding */
+  margin-left: 1rem; /* Adding left margin */
+  color: #7D7D7D; /* Setting text color */
+  min-height: calc(100vh - 2rem); /* Setting minimum height */
+  border: none; /* Removing border */
+  outline: none; /* Removing outline */
 }
 
+/* Styles for buttons wrapper */
 .buttons-wrapper {
-  position: fixed;
-  top: 0;
-  right: 0;
-  opacity: .15;
-  transition: opacity 200ms ease-in-out;
-  background-color: #0081A2;
-  padding: 1rem;
+  position: fixed; /* Positioning fixed */
+  top: 0; /* Placing at the top */
+  right: 0; /* Placing at the right */
+  opacity: .15; /* Setting initial opacity */
+  transition: opacity 200ms ease-in-out; /* Adding transition effect */
+  background-color: #0081A2; /* Setting background color */
+  padding: 1rem; /* Adding padding */
 }
 
+/* Hover effect for buttons wrapper */
 .buttons-wrapper:hover {
-  opacity: 1;
+  opacity: 1; /* Changing opacity on hover */
 }
 
+/* Styles for logo */
 .logo {
-  font-size: 2rem;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  width: 100%;
-  display: inline-block;
+  font-size: 2rem; /* Setting font size */
+  text-align: center; /* Aligning text to the center */
+  text-decoration: none; /* Removing text decoration */
+  color: white; /* Setting text color */
+  width: 100%; /* Taking full width */
+  display: inline-block; /* Displaying as inline block */
 }
 
+/* Hover effect for logo */
 .logo:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Adding underline on hover */
 }
 
+/* Styles for buttons container */
 .buttons {
-  display: flex;
-  margin-top: .5rem;
-  justify-content: center;
+  display: flex; /* Using flexbox for layout */
+  margin-top: .5rem; /* Adding top margin */
+  justify-content: center; /* Centering content */
 }
 
+/* Styles for buttons except the first one */
 .buttons > * + * {
-  margin-left: .25rem;
+  margin-left: .25rem; /* Adding left margin */
 }
 
+/* Styles for generic button */
 .btn {
-  cursor: pointer;
-  background: none;
-  border: 1px solid #002b36;
-  color: #002b36;
-  border-radius: .25rem;
-  padding: .25rem .5rem;
-  transition: background-color 200ms ease-in-out;
-  display: inline-block;
-  text-decoration: none;
+  cursor: pointer; /* Setting cursor to pointer */
+  background: none; /* Setting background to none */
+  border: 1px solid #002b36; /* Setting border */
+  color: #002b36; /* Setting text color */
+  border-radius: .25rem; /* Adding border radius */
+  padding: .25rem .5rem; /* Adding padding */
+  transition: background-color 200ms ease-in-out; /* Adding transition effect */
+  display: inline-block; /* Displaying as inline block */
+  text-decoration: none; /* Removing text decoration */
 }
 
+/* Hover effect for buttons */
 .btn:hover {
-  background-color: #83E5FF;
+  background-color: #83E5FF; /* Changing background color on hover */
 }

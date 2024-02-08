@@ -1,11 +1,16 @@
 <div class="buttons-wrapper">
+  <!-- Logo linking to the home page -->
   <a href="/" class="logo">WasteBin</a>
   <div class="buttons">
+    <!-- Button to create a new document -->
     <a href="/new" class="btn">New</a>
+    <!-- Conditional rendering of the save button if the 'canSave' local variable is true -->
     <% if (locals.canSave) { %>
       <button class="btn" type="submit">Save</button>
     <% } %>
+    <!-- Conditional rendering of the duplicate button if the 'id' local variable is not null -->
     <% if (locals.id != null) { %>
+      <!-- Button to duplicate the current document -->
       <a href="/<%= locals.id %>/duplicate" class="btn">Duplicate</a>
     <% } %>
   </div>

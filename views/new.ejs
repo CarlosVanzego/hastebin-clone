@@ -4,20 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Linking the external stylesheet -->
   <link rel="stylesheet" href="/styles.css" />
+  <!-- Including autosize.js for resizing textareas dynamically -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/6.0.1/autosize.min.js" integrity="sha512-OjjaC+tijryqhyPqy7jWSPCRj7fcosu1zreTX1k+OWSwu6uSqLLQ2kxaqL9UpR7xFaPsCwhMf1bQABw2rCxMbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <title>Document</title>
 </head>
 <body>
+  <!-- Form for submitting document content -->
   <form action="/save" method="POST">
+    <!-- Including buttons template with 'canSave' variable set to true -->
     <%- include("_buttons.ejs", { canSave: true }) %>
     <div class="wrapper">
+      <!-- Line numbers display -->
       <div class="line-numbers">
         &gt;
       </div>
+      <!-- Textarea for entering document content -->
       <textarea autofocus name="value"><%= locals.value %></textarea>
     </div>
   </form>
+  <!-- Script to initialize autosize for dynamically resizing textareas -->
   <script>
     autosize(document.querySelector('textarea'))
   </script>

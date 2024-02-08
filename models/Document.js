@@ -1,10 +1,14 @@
-const mongoose = require("mongoose")
+// Importing mongoose module for MongoDB interaction
+const mongoose = require("mongoose");
 
-const documentScheme = new mongoose.Schema({
+// Defining a schema for the Document model
+const documentSchema = new mongoose.Schema({
+  // Value field to store the document content
   value: {
-    type: String,
-    required: true,
+    type: String, // Value should be a string
+    required: true, // Value is required
   },
-})
+});
 
-module.exports = mongoose.model("Document", documentScheme)
+// Exporting the Document model using the defined schema
+module.exports = mongoose.model("Document", documentSchema);
